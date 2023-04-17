@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Megafone", "Megafone\Megafone.csproj", "{C68EC68F-28B4-4739-843D-7C8BE4994039}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{ECEDE948-0E2B-45C0-8B44-86ADA3601F7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{3E8E0D69-61A8-4371-86D8-1135B03DDA77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{5E7CA362-D9A7-444F-8E7D-0D66E05580AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Business", "3 - Business", "{C157C7D3-54A8-43DF-BE05-B93CACCE41CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Repository", "4 - Repository", "{BCB4C4B2-B73B-4C2B-9007-1EB9D3334755}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Shared", "5 - Shared", "{787ADCA8-5362-48B0-98F5-1073BB88B0E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Tests", "6 - Tests", "{177ACB66-E2F3-4BD9-9FB3-437D5BD26608}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.core", "Domain.core\Domain.core.csproj", "{D7EB48A9-E27D-4D36-9947-F90D50410DA2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Usuario", "Domain.Receptor\Domain.Usuario.csproj", "{2318D70A-0098-4ADE-87F7-128A100742DC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySqlRepository", "MySqlRepository\MySqlRepository.csproj", "{F14558D8-A853-4F80-9FF4-CFC6B9317574}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsuarioBusiness", "ReceptorBusiness\UsuarioBusiness.csproj", "{35ABF099-E06D-4CB5-858C-645B0596B5E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsuarioApplication", "ReceptorApplication\UsuarioApplication.csproj", "{EFE71E88-CE26-41B1-8402-3BC88DB1FA11}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MegafoneUnitTest", "MegafoneUnitTest\MegafoneUnitTest.csproj", "{3F2C565D-2A32-4808-AF7F-B2CB99E7B088}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C68EC68F-28B4-4739-843D-7C8BE4994039}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C68EC68F-28B4-4739-843D-7C8BE4994039}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C68EC68F-28B4-4739-843D-7C8BE4994039}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C68EC68F-28B4-4739-843D-7C8BE4994039}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7EB48A9-E27D-4D36-9947-F90D50410DA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7EB48A9-E27D-4D36-9947-F90D50410DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7EB48A9-E27D-4D36-9947-F90D50410DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7EB48A9-E27D-4D36-9947-F90D50410DA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2318D70A-0098-4ADE-87F7-128A100742DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2318D70A-0098-4ADE-87F7-128A100742DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2318D70A-0098-4ADE-87F7-128A100742DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2318D70A-0098-4ADE-87F7-128A100742DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F14558D8-A853-4F80-9FF4-CFC6B9317574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F14558D8-A853-4F80-9FF4-CFC6B9317574}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F14558D8-A853-4F80-9FF4-CFC6B9317574}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F14558D8-A853-4F80-9FF4-CFC6B9317574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35ABF099-E06D-4CB5-858C-645B0596B5E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35ABF099-E06D-4CB5-858C-645B0596B5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35ABF099-E06D-4CB5-858C-645B0596B5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35ABF099-E06D-4CB5-858C-645B0596B5E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFE71E88-CE26-41B1-8402-3BC88DB1FA11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFE71E88-CE26-41B1-8402-3BC88DB1FA11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFE71E88-CE26-41B1-8402-3BC88DB1FA11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFE71E88-CE26-41B1-8402-3BC88DB1FA11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F2C565D-2A32-4808-AF7F-B2CB99E7B088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F2C565D-2A32-4808-AF7F-B2CB99E7B088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F2C565D-2A32-4808-AF7F-B2CB99E7B088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F2C565D-2A32-4808-AF7F-B2CB99E7B088}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C68EC68F-28B4-4739-843D-7C8BE4994039} = {ECEDE948-0E2B-45C0-8B44-86ADA3601F7B}
+		{D7EB48A9-E27D-4D36-9947-F90D50410DA2} = {5E7CA362-D9A7-444F-8E7D-0D66E05580AF}
+		{2318D70A-0098-4ADE-87F7-128A100742DC} = {5E7CA362-D9A7-444F-8E7D-0D66E05580AF}
+		{F14558D8-A853-4F80-9FF4-CFC6B9317574} = {BCB4C4B2-B73B-4C2B-9007-1EB9D3334755}
+		{35ABF099-E06D-4CB5-858C-645B0596B5E5} = {C157C7D3-54A8-43DF-BE05-B93CACCE41CA}
+		{EFE71E88-CE26-41B1-8402-3BC88DB1FA11} = {3E8E0D69-61A8-4371-86D8-1135B03DDA77}
+		{3F2C565D-2A32-4808-AF7F-B2CB99E7B088} = {177ACB66-E2F3-4BD9-9FB3-437D5BD26608}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7402F764-956B-4147-9B4F-DE25332B4C3E}
+	EndGlobalSection
+EndGlobal

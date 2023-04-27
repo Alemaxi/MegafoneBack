@@ -9,6 +9,7 @@ namespace Megafone.DI
         public CoreDI(IServiceCollection services)
         {
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            services.AddScoped<IMegaFoneRepository, MegaFoneRepository>();
         }
     }
 }

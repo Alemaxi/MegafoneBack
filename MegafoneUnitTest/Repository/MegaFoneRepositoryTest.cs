@@ -1,14 +1,10 @@
-﻿using Domain.core.DTO;
+﻿using Domain.core.DTO.Megafone;
 using MegafoneUnitTest.Fixture;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MegafoneUnitTest.Repository
 {
-    public class MegaFoneRepositoryTest: IClassFixture<RepositoryFixture>
+    [Collection("RepositoryFixture")]
+    public class MegaFoneRepositoryTest
     {
 
         private readonly RepositoryFixture _fixture;
@@ -17,6 +13,7 @@ namespace MegafoneUnitTest.Repository
         {
             _fixture = fixture;
         }
+
 
         [Fact]
         public void ObterUmMegaFonePorId()
@@ -53,9 +50,9 @@ namespace MegafoneUnitTest.Repository
         [Fact]
         public async void CriarMegaFone()
         {
-            var inserido = await _fixture._megaFoneRepository.CriarMegaFone(new MegaFoneDTO { Nome = "MegaFone criado", idMensageiro=2});
+            var inserido = await _fixture._megaFoneRepository.CriarMegaFone(new CriarMegafoneDTO { Nome = "MegaFone criado", idMensageiro=2, Descricao="Descricao"});
 
-            var resultado = await _fixture._megaFoneRepository.ObterMegaFonePorId(inserido.Id.Value);
+            var resultado = await _fixture._megaFoneRepository.FiltrarMegaFonesPorNome("MegaFone criado");
 
             Assert.NotNull(resultado);
         }
@@ -76,6 +73,20 @@ namespace MegafoneUnitTest.Repository
             var resultado = _fixture._megaFoneRepository.ObterMegaFonePorId(2);
 
             Assert.Null(resultado);
+        }
+
+        [Fact]
+        public async void CadastrarEmMegafone()
+        {
+            await _fixture._megaFoneRepository.CadastrarEmMegafone(new CadastrarEmMegafoneDTO
+            {
+                idMegafone= 1,
+                idReceptor= 1,
+            });
+
+            var result =  await _fixture._megaFoneRepository.ObterMegaFonesPorReceptorId(1);
+
+            Assert.NotEmpty(result);
         }
     }
 }

@@ -5,9 +5,9 @@ using UsuarioApplication.Implementacao;
 
 namespace Megafone.DI
 {
-    public class ReceptorDI
+    public class UsuarioDI
     {
-        public ReceptorDI(IServiceCollection services)
+        public UsuarioDI(IServiceCollection services)
         {
             services.AddScoped<IUsuarioApplication, UsuarioApplicationService>();
             services.AddScoped<IUsuarioBusiness, UsuarioBusinessService>();

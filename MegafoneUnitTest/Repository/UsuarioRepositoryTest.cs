@@ -5,7 +5,8 @@ using MySqlRepository;
 
 namespace MegafoneUnitTest.Repository
 {
-    public class UsuarioRepositoryTest: IClassFixture<RepositoryFixture>
+    [Collection("RepositoryFixture")]
+    public class UsuarioRepositoryTest
     {
         RepositoryFixture _fixture;
 

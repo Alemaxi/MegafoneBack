@@ -4,15 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.core.Entity
+namespace Domain.core.DTO.Megafone
 {
-    public class MegaFone
+    public class ReceptorMegafoneDTO
     {
         public int? Id { get; set; }
         public string? Nome { get; set; }
         public string? Descricao { get; set; }
-        public int? MensageiroId { get; set; }
-        public Usuario? Mensageiro { get; set; }
-        public IEnumerable<ReceptorXMegaFone> ReceptoresXMegaFones { get; set; }
+        public int? QuantidadeMensagens { get; set; }
     }
 }

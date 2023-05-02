@@ -47,7 +47,7 @@ namespace MySqlRepository.Repository
         {
             var resultados = _context.MegaFones.AsNoTracking().Where(x => x.ReceptoresXMegaFones.Where(y => y.ReceptorId == idReceptor).Count()>0)
                 .Include(x => x.ReceptoresXMegaFones)
-                .Select(x => new ReceptorMegafoneDTO { Id = x.Id, Nome = x.Nome,Descricao = x.Descricao, QuantidadeMensagens= x.ReceptoresXMegaFones.Count() }).AsEnumerable();
+                .Select(x => new ReceptorMegafoneDTO { Id = x.Id, Nome = x.Nome,Descricao = x.Descricao, QuantidadeMensagens= x.Mensagens.Count() }).AsEnumerable();
 
             var item = _context.MegaFones.SelectMany(x => x.ReceptoresXMegaFones).ToList();
 
@@ -73,9 +73,12 @@ namespace MySqlRepository.Repository
             throw new NotImplementedException();
         }
 
-        public Task<MegaFoneDTO> RemoverMegaFone(MegaFoneDTO megaFone)
+        public Task<MegaFoneDTO> RemoverMegaFone(int id)
         {
-            throw new NotImplementedException();
+            var result = _context.Remove<MegaFone>(new MegaFone { Id=id}).Entity;
+            _context.SaveChanges();
+
+            return Task.FromResult(new MegaFoneDTO { Id=result.Id});
         }
 
         public async Task CadastrarEmMegafone(CadastrarEmMegafoneDTO cadastrar)

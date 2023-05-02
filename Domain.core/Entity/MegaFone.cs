@@ -14,5 +14,6 @@ namespace Domain.core.Entity
         public int? MensageiroId { get; set; }
         public Usuario? Mensageiro { get; set; }
         public IEnumerable<ReceptorXMegaFone> ReceptoresXMegaFones { get; set; }
+        public IEnumerable<Mensagem> Mensagens { get; set; }
     }
 }

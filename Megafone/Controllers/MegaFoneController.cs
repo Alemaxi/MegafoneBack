@@ -46,5 +46,12 @@ namespace Megafone.Controllers
             await _application.CadastrarEmMegafone(megafone);
             return;
         }
+
+        [HttpDelete("{id}")]
+        public async Task RemoverMegafone([FromRoute]int id)
+        {
+            await _application.RemoverMegaFone(id);
+            return;
+        }
     }
 }

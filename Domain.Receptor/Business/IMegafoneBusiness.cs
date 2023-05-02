@@ -8,5 +8,6 @@ namespace Domain.Usuario.Business
         public Task<CriarMegafoneDTO?> CriarMegaFone(CriarMegafoneDTO megaFone);
         public Task<IEnumerable<ReceptorMegafoneDTO>> ObterMegaFonesPorReceptorId(int idReceptor);
         public Task CadastrarEmMegafone(CadastrarEmMegafoneDTO cadastrar);
+        public Task<MegaFoneDTO?> RemoverMegaFone(int id);
     }
 }

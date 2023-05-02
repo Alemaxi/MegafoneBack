@@ -19,6 +19,6 @@ namespace Domain.core.Repository
         //Atualiza MegaFone
         public Task<MegaFoneDTO?> AtualizarMegaFone(MegaFoneDTO megaFone);
         //remover Megafone
-        public Task<MegaFoneDTO?> RemoverMegaFone(MegaFoneDTO megaFone);
+        public Task<MegaFoneDTO?> RemoverMegaFone(int id);
     }
 }

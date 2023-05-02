@@ -66,11 +66,12 @@ namespace MegafoneUnitTest.Repository
         }
 
         [Fact]
-        public void RemoverMegaFone()
+        public async void RemoverMegaFone()
         {
-            var removido = _fixture._megaFoneRepository.RemoverMegaFone(new MegaFoneDTO { Id = 2, Nome = "MegaFone atualizado", idMensageiro = 2 });
+            _fixture._context.ChangeTracker.Clear();
+            var removido = await _fixture._megaFoneRepository.RemoverMegaFone(2);
 
-            var resultado = _fixture._megaFoneRepository.ObterMegaFonePorId(2);
+            var resultado = await _fixture._megaFoneRepository.ObterMegaFonePorId(2);
 
             Assert.Null(resultado);
         }

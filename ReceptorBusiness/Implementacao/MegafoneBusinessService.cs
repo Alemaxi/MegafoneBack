@@ -43,5 +43,12 @@ namespace UsuarioBusiness.Implementacao
             await _repository.CadastrarEmMegafone(cadastrar);
             return;
         }
+
+        public async Task<MegaFoneDTO?> RemoverMegaFone(int id)
+        {
+            var result = await _repository.RemoverMegaFone(id);
+
+            return result;
+        }
     }
 }

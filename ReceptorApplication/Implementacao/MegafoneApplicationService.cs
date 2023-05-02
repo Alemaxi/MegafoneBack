@@ -43,5 +43,11 @@ namespace UsuarioApplication.Implementacao
 
             return;
         }
+
+        public async Task<MegaFoneDTO?> RemoverMegaFone(int id)
+        {
+            var result =  await _business.RemoverMegaFone(id);
+            return result;
+        }
     }
 }

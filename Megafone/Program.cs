@@ -15,6 +15,7 @@ builder.Services.AddDbContext<MysqlContext>(opt =>
 new CoreDI(builder.Services);
 new UsuarioDI(builder.Services);
 new MegafoneDI(builder.Services);
+new MensagemDI(builder.Services);
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

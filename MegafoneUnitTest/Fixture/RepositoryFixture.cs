@@ -16,6 +16,7 @@ namespace MegafoneUnitTest.Fixture
         public MysqlContext _context;
         public UsuarioRepository _repository;
         public MegaFoneRepository _megaFoneRepository;
+        public MensagemRepository _mensagemRepository;
 
         public RepositoryFixture()
         {
@@ -26,6 +27,7 @@ namespace MegafoneUnitTest.Fixture
 
             MockParaReceptorRepository();
             MockParaMegaFoneRepository();
+            MockParaMensagemRepository();
         }
 
         public void MockParaReceptorRepository()
@@ -54,6 +56,11 @@ namespace MegafoneUnitTest.Fixture
 
             _context.SaveChanges();
             _megaFoneRepository = new MegaFoneRepository(_context);
+        }
+
+        public void MockParaMensagemRepository()
+        {
+            _mensagemRepository = new MensagemRepository(_context);
         }
 
         public void Dispose()

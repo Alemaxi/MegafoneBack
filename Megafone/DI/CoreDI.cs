@@ -10,6 +10,7 @@ namespace Megafone.DI
         {
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
             services.AddScoped<IMegaFoneRepository, MegaFoneRepository>();
+            services.AddScoped<IMensagemRepository, MensagemRepository>();
         }
     }
 }

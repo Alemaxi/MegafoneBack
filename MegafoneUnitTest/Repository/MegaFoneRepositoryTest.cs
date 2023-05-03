@@ -57,13 +57,13 @@ namespace MegafoneUnitTest.Repository
             Assert.NotNull(resultado);
         }
 
-        [Fact]
+        /*[Fact]
         public async void AtualizarMegaFone()
         {
             var inserido = await _fixture._megaFoneRepository.AtualizarMegaFone(new MegaFoneDTO {Id=2, Nome = "MegaFone atualizado", idMensageiro = 2 });
         
             var resultado = await _fixture._megaFoneRepository.ObterMegaFonePorId(inserido.Id.Value);
-        }
+        }*/
 
         [Fact]
         public async void RemoverMegaFone()

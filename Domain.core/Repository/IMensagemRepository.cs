@@ -12,7 +12,7 @@ namespace Domain.core.Repository
         //Obter mensagem por Id
         Task<MensagemDTO> ObterMensagemPorId(int id);
         //Obter mensagem por IdMegaFone
-        Task<MensagemDTO> ObterMensagemPorIdMegaFone(int idMegaFone);
+        Task<IEnumerable<MensagemDTO>> ObterMensagemPorIdMegaFone(int idMegaFone);
         //Adicionar Mensagem
         Task<MensagemDTO> AdicionarMensagem(MensagemDTO mensagem);
         //Atualizar Mensagem
